@@ -1,0 +1,383 @@
+font-family: 'Poppins', serif;
+font-family: 'Indie Flower', serif;
+hr {
+  border-top: 1px solid red;
+}
+/*PARTES*/
+
+body{
+     margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+main{
+    width: 100%;
+}
+
+section{
+    padding-top: 2%;
+    width: 65%;
+    float: right;
+    padding-right: 5%;
+}
+aside{
+    padding-top: 2%;
+    width: 30%;
+    float: left;
+    
+}
+/*TEXTO*/
+#titulo{
+    margin: 5%;
+    font-family: 'Poppins', serif;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    right: 20%;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-size: 75px;
+    text-shadow: 2px 2px 2px blue;
+    
+}
+h2{
+    font-family: 'Poppins', serif;
+    
+}
+h3{
+    font-family: 'Poppins', serif;
+    padding-left: 2%;
+}
+#conti{
+    padding-left: 10%;
+}
+#viajes, #tips{
+    border-bottom: 3px solid gray;
+}
+p{
+   font-family: 'Poppins', serif; 
+    text-align: justify;
+}
+.nombres{
+    opacity: 0;
+}
+/*CABECERA*/
+#cabecera{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#principales{
+    width: 100%;
+    height: 300px;
+   
+}
+
+
+/*NAVEGADOR*/
+#navegador{
+    justify-content: space-around;
+    text-decoration: none;
+    text-align: end;
+    width: 100%;
+    
+}
+ul{
+    width: auto;
+    text-align: end;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    text-decoration: none;
+}
+ol{
+    list-style-type: lower-roman;
+}
+
+li{
+    margin: 2px;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: 'Poppins', serif;
+}
+
+li a:hover, .active{
+    color: red;
+    font-weight: bold;
+}
+a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+/*CONTINENTES*/
+#imag{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 20%;
+}
+.continentes{
+    width: 50%;
+}
+#oceania, #asia, #europa, #america, #africa{
+    text-align: center;
+    padding: 5%;
+}
+
+#oceania:hover, #asia:hover, #europa:hover, #africa:hover, #america:hover{
+    width: 60%;
+    opacity: 0.60;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+   
+}
+#rotar{
+    
+    position:relative;
+    left: 20%;
+    top: 50%;
+    width: 50%;
+    -webkit-animation: spin1 20s infinite linear;
+    -moz-animation: spin1 20s infinite linear;
+    -o-animation: spin1 20s infinite linear;
+    -ms-animation: spin1 20s infinite linear;
+    animation: spin1 20s infinite linear;
+    
+}
+#mundo{
+    position:absolute;
+    top: 113%;
+    left: 53%;
+    width: 12%;    
+}
+
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+} 
+
+
+/*RESPONSIVE*/
+/*@media all and (max-width: 1331px){
+   
+    #menu{
+        justify-content: space-around;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        display: inline;
+        text-align: center;
+}
+    #menu:hover+ul{
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+    #menu:hover+ul li{
+        display: block;
+    }
+    ul {
+        display: none;
+        position: absolute;
+    }
+    */
+/*BARRAS MENU*/  
+/*
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .barra1, .barra2, .barra3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        margin-left: 5px;
+        transition: 0.4s;
+    }
+
+    .change .barra1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .barra2 {
+        opacity: 0;
+    }
+
+    .change .barra3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    h1{
+    font-family: 'Poppins', serif;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+        right: 20%;
+    color:white;
+    font-size: 45px;
+    color: white; 
+        margin: 0;
+    padding: 0;
+    
+    }
+}
+@media all and (max-width: 768px){
+   
+    #menu{
+        justify-content: space-around;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        display: inline;
+        text-align: center;
+}
+    #menu:hover+ul{
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+    #menu:hover+ul li{
+        display: block;
+    }
+    ul {
+        display: none;
+        position: absolute;
+    }
+    */
+/*BARRAS MENU*/  /*
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .barra1, .barra2, .barra3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        margin-left: 5px;
+        transition: 0.4s;
+    }
+
+    .change .barra1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .barra2 {
+        opacity: 0;
+    }
+
+    .change .barra3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    h1{
+    font-family: 'Poppins', serif;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+        right: 30%;
+    color:white;
+    font-size: 30px;
+    color: white; 
+        margin: 0;
+    padding: 0;
+    
+    }
+}
+
+@media all and (max-width: 460px){
+   
+    #menu{
+        justify-content: space-around;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        display: inline;
+        text-align: center;
+}
+    #menu:hover+ul{
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+    #menu:hover+ul li{
+        display: block;
+    }
+    ul {
+        display: none;
+        position: absolute;
+    }
+    */
+/*BARRAS MENU*/  /*
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .barra1, .barra2, .barra3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        margin-left: 5px;
+        transition: 0.4s;
+    }
+
+    .change .barra1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .barra2 {
+        opacity: 0;
+    }
+
+    .change .barra3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    h1{
+    font-family: 'Poppins', serif;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    right: 25%;
+    color:white;
+    font-size: 25px;
+    color: white; 
+        margin: 0;
+    padding: 0;
+    
+    }
+}*/
